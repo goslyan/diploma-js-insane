@@ -11,7 +11,7 @@ const fullListModal = () => {
             modal.style.visibility = 'visible'
         }
     })
-
+    
     document.addEventListener('click', (e) => {
         if (e.target.closest('.close') || e.target.classList.contains('popup-repair-types')) {
             modal.style.visibility = 'hidden'

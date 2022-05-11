@@ -1,12 +1,13 @@
 const menu = () => {
-    let menu = document.querySelector('.menu')
-    let menuModal = document.querySelector('.popup-dialog-menu')
+    const menuOpen = document.querySelector('.menu')
+    const menuModal = document.querySelector('.popup-dialog-menu')
 
-    menu.addEventListener('click', () => {
+    menuOpen.addEventListener('click', () => {
         menuModal.style.marginRight = 645 + 'px'
     })
+
     document.addEventListener('click', (e) => {
-        if (e.target.closest('.close-menu') || e.target.classList.contains('.popup-menu > .row')){
+        if (e.target.closest('.close-menu')) {
             menuModal.style.marginRight = 0
         }
     })
