@@ -1,29 +1,83 @@
-import scroll from './modules/scroll.js'
+import admin from './modules/admin'
+import telephone from './modules/telephone'
 import menu from './modules/menu'
-import numDown from './modules/numDown'
-import fullListModal from './modules/fullListModal'
-import sliderRepair from './modules/sliderRepair'
-import accordeon from './modules/accordeon'
-import success from './modules/success'
+import smoothButtonUp from './modules/smoothButtonUp'
+import popup from './modules/popup'
 import validation from './modules/validation'
-import reviewsSlider from './modules/reviewsSlider'
-import transparency from './modules/transparensy'
-import consultation from './modules/consultation'
-import privacy from './modules/privacy'
-import popupThank from './modules/popupThanks'
+import hint from './modules/hint'
+import scrollTop from './modules/scrollTop'
+import accordion from './modules/accordion'
+import slider from './modules/slider'
+import sliderSwipe from './modules/sliderSwipe'
 import sendForm from './modules/sendForm'
+import price from './modules/price'
 
-scroll()
+admin()
+telephone()
 menu()
-numDown()
-fullListModal()
-sliderRepair()
-accordeon()
-success()
+smoothButtonUp()
+popup('.popup-privacy', '.link-privacy')
+popup('.popup-repair-types', '.link-list')
+popup('.popup-consultation', '#director .button_wide')
+popup('.popup-transparency', '.transparency-item')
+popup('.popup-portfolio', '.portfolio-slider__slide-frame')
 validation()
-reviewsSlider()
-transparency()
-consultation()
-privacy()
-popupThank()
-sendForm()
+hint()
+scrollTop()
+accordion()
+slider('#repair-types', '.types-repair1 > .repair-types')
+slider('.popup-transparency', '.popup-transparency')
+slider('.popup-portfolio', '.popup-portfolio')
+slider('.popup-portfolio', '.popup-portfolio-text')
+sliderSwipe('#portfolio', '.portfolio-slider')
+sliderSwipe('#repair-types', '.nav-list')
+sliderSwipe('#formula', '.formula-slider')
+sliderSwipe('#reviews', '.reviews-slider')
+sliderSwipe('#transparency', '.transparency-slider')
+price()
+
+sendForm({
+    formId: 'feedback1',
+    someElem: [
+        {
+            type: 'block',
+            id: 'feedback-input1'
+        }
+    ]
+});
+sendForm({
+    formId: 'feedback2',
+    someElem: [
+        {
+            type: 'block',
+            id: 'feedback-input2'
+        }
+    ]
+});
+sendForm({
+    formId: 'feedback3',
+    someElem: [
+        {
+            type: 'block',
+            id: 'feedback-input3'
+        }
+    ]
+});
+sendForm({
+    formId: 'feedback4',
+    someElem: [
+        {
+            type: 'block',
+            id: 'feedback-input4'
+        }
+    ]
+});
+sendForm({
+    formId: 'feedback5',
+    someElem: [
+        {
+            type: 'block',
+            id: 'feedback-input5'
+        }
+    ]
+});
