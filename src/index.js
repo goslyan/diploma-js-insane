@@ -8,15 +8,14 @@ import mask from "./modules/mask"
 import sendForm from "./modules/sendForm"
 import formula from "./modules/formula"
 import repairSlaider from "./modules/plansRepairSlaider"
-import modalDoc from "./modules/documentsModal"
 import accordion from "./modules/accordion"
 import privacyPolice from "./modules/privacyPolice"
 import portfolioSlider from "./modules/sliderPortfolio"
 import portfolioModal from "./modules/portfolioModal"
 import comment from "./modules/sliderComment"
 import openConsultation from "./modules/consultation"
-import documentAdaptive from "./modules/documentsAdaptive"
 import price from "./modules/price"
+import transparency from "./modules/transparensy"
 
 admin()
 signinAdmin()
@@ -27,15 +26,14 @@ repairModal()
 mask()
 formula()
 repairSlaider()
-modalDoc()
 accordion()
 privacyPolice()
 portfolioSlider()
 portfolioModal()
 comment()
 openConsultation()
-documentAdaptive()
 price()
+transparency()
 
 sendForm({
     formId: 'feedback1',
