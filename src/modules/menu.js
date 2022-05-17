@@ -1,30 +1,14 @@
 const menu = () => {
-    const buttonOpen = document.querySelector('.menu__icon')
-    const modal = document.querySelector('.popup-menu')
-    const modalValue = modal.querySelector('.popup-dialog-menu')
+    const menuOpen = document.querySelector('.menu')
+    const menuModal = document.querySelector('.popup-dialog-menu')
 
-    const modalOpen =  () => {
-        modalValue.style.transform = "translate3d(0, 0, 0)"
-    }
+    menuOpen.addEventListener('click', () => {
+        menuModal.style.marginRight = 645 + 'px'
+    })
 
-    const modalClose = () => {
-        if (window.innerWidth < 576) {
-            modalValue.style.transform = "translate3d(0, -100vh, 0)"
-        } else {
-            modalValue.style.transform = "translate3d(645px, 0, 0)"
-        }
-    }
-    
-    buttonOpen.addEventListener('click', modalOpen)
-
-    modalValue.addEventListener('click', (e) => {
-        e.preventDefault()
-        if (e.target.matches('.close')) {
-            modalClose()
-        } else if (e.target.matches('[href*="#"]')) {
-            modalClose()
-        } else if (e.target.matches('.menu-link')) {
-            modalClose()
+    document.addEventListener('click', (e) => {
+        if (e.target.closest('.close-menu')) {
+            menuModal.style.marginRight = 0
         }
     })
 }

@@ -1,5 +1,5 @@
 {
-  "name": "relax",
+  "name": "js-insane",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,21 +8,13 @@
     "watch": "webpack --watch --mode development",
     "server": "json-server --watch --mode development ./crm-backend/db.json --port=3004"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/VaskaBzh/relax.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/VaskaBzh/relax/issues"
-  },
-  "homepage": "https://github.com/VaskaBzh/relax#readme",
-  "dependencies": {
+  "devDependencies": {
     "webpack": "^5.72.0",
     "webpack-cli": "^4.9.2"
   },
-  "devDependencies": {
+  "dependencies": {
     "json-server": "^0.17.0"
   }
 }

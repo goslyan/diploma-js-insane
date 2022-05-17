@@ -4,10 +4,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,600,700,800,900&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900&amp;subset=cyrillic"
+		  rel="stylesheet">
+	<link
+			href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,600,700,800,900&amp;subset=cyrillic,cyrillic-ext"
+			rel="stylesheet">
 	<link rel="stylesheet" href="./css/style.css">
-	<script src="../dist/main.js" defer></script>
+	<script src="./dist/main.js" defer></script>
 	<title>Relax Live</title></head>
 <body>
 	<div class="main" id="main">
@@ -164,7 +167,7 @@
 							<div class="feedback__input">
 								<input class="input feedback__input-input" name="phone" type="text"
 									   placeholder="Введите номер телефона" id="feedback-input1"
-									   minlength="18"></div>
+									   minlength="18" data-phone-pattern 'data-phone-clear = "false"></div>
 							<button class="button">Перезвоните мне</button>
 							<div class="checkbox"><input class="checkbox__input" type="checkbox" id="checkbox1"> <label
 									class="checkbox__label" for="checkbox1"></label>
@@ -512,7 +515,9 @@
 																									  id="feedback-input2"
 																									  required=""
 																									  placeholder="+7 (___)___-__-__"
-																									  minlength="18"></label>
+																									  minlength="18" 
+																									  data-phone-pattern
+																									  'data-phone-clear = "true"></label>
 				<button class="button button-feedback-block">Перезвоните мне</button>
 				<div class="checkbox checkbox-feedback-block">
 					<input class="checkbox__input" type="checkbox" id="checkbox2"
@@ -784,7 +789,7 @@
 					<div class="feedback__title">Получите консультацию от специалиста в удобное для Вас время</div>
 					<form class="feedback__form" id="feedback3">
 						<div class="feedback__input"><input class="input feedback__input-input" name="phone" type="text"
-															placeholder="Введите номер телефона" id="feedback-input3" minlength="18">
+															placeholder="Введите номер телефона" id="feedback-input3" minlength="18" data-phone-pattern 'data-phone-clear = "false">
 						</div>
 						<button class="button">Перезвоните мне</button>
 						<div class="checkbox"><input class="checkbox__input" type="checkbox" id="checkbox3"> <label
@@ -937,7 +942,9 @@
 																									  id="feedback-input4"
 																									  required=""
 																									  placeholder="+7 (___)___-__-__"
-																									  minlength="18"></label>
+																									  minlength="18" 
+																									  data-phone-pattern 
+																									  'data-phone-clear = "false"></label>
 				<button class="button button-feedback-block">Перезвоните мне</button>
 				<div class="checkbox checkbox-feedback-block">
 					<input class="checkbox__input" type="checkbox" id="checkbox4"
@@ -1136,7 +1143,9 @@
 																									  id="feedback-input5"
 																									  required=""
 																									  placeholder="+7 (___)___-__-__"
-																									  minlength="18"></label>
+																									  minlength="18" 
+																									  data-phone-pattern 
+																									  'data-phone-clear = "false"></label>
 				<button class="button button-feedback-block">Перезвоните мне</button>
 				<div class="checkbox checkbox-feedback-block">
 					<input class="checkbox__input" type="checkbox" id="checkbox5"

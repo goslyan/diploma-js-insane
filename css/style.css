@@ -978,7 +978,6 @@ template, [hidden] {
     margin-top: 100px;
     background: url(../images/decor/big_round_decor.svg) 100% 100% no-repeat;
     background-position: center -65px;
-    overflow: hidden;
 }
 
 @media (max-width: 1024px) {
@@ -1233,7 +1232,7 @@ template, [hidden] {
     font-weight: 300;
     text-align: center;
     color: #000000;
-    /* z-index: 0; */
+    z-index: 0;
 }
 
 .formula-item strong {
@@ -1387,11 +1386,6 @@ template, [hidden] {
     z-index: -1;
 }
 
-.rotate.formula-item-popup-01::before {
-    background: url("../images/formula/item_popup_1.svg") no-repeat;
-    transform: rotate(180deg);
-}
-
 .formula-item-popup-02 {
     min-height: 191px;
 }
@@ -1412,11 +1406,6 @@ template, [hidden] {
     background: url("../images/formula/item_popup_2.svg") no-repeat;
     background-size: contain;
     z-index: -1;
-}
-
-.rotate.formula-item-popup-02::before {
-    background: url("../images/formula/item_popup_2.svg") no-repeat;
-    transform: rotate(180deg);
 }
 
 @media (max-width: 575px) {
@@ -1448,11 +1437,6 @@ template, [hidden] {
     z-index: -1;
 }
 
-.rotate.formula-item-popup-03::before {
-    background: url("../images/formula/item_popup_3.svg") no-repeat;
-    transform: rotate(180deg);
-}
-
 .formula-item-popup-04 {
     min-height: 171px;
 }
@@ -1473,11 +1457,6 @@ template, [hidden] {
     background: url("../images/formula/item_popup_4.svg") no-repeat;
     background-size: contain;
     z-index: -1;
-}
-
-.rotate.formula-item-popup-04::before {
-    background: url("../images/formula/item_popup_4.svg") no-repeat;
-    transform: rotate(180deg);
 }
 
 .formula-item-popup-05 {
@@ -1501,11 +1480,6 @@ template, [hidden] {
     background: url("../images/formula/item_popup_5.svg") no-repeat;
     background-size: contain;
     z-index: -1;
-}
-
-.rotate.formula-item-popup-05::before {
-    background: url("../images/formula/item_popup_5.svg") no-repeat;
-    transform: rotate(180deg);
 }
 
 .formula-item-popup-06 {
@@ -1532,11 +1506,6 @@ template, [hidden] {
     background: url("../images/formula/item_popup_6.svg") no-repeat;
     background-size: contain;
     z-index: -1;
-}
-
-.rotate.formula-item-popup-06::before {
-    background: url("../images/formula/item_popup_6.svg") no-repeat;
-    transform: rotate(180deg);
 }
 
 @media (max-width: 575px) {
